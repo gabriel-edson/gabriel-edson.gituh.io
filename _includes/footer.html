@@ -1,58 +1,77 @@
-{% assign owner = site.data.nav.footer[0] %}
-{% assign social = site.data.nav.footer[1] %}
-{% assign feed = site.data.nav.footer[2] %}
-
-<footer class="page-footer">
-    <div class="page-footer-owner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 pb-3 text-center">
-                    <!-- owner info -->
-                    <p class="m-0">
-                        Owned by
-                        {% if owner.url %}
-                        <a href="{{ owner.url }}" {% if owner.description %} title="{{ owner.description }}"
-                            {% endif %}>{{ owner.owner }}</a>
-                        {% else %}
-                            <strong>{{ owner.owner }}</strong>
-                        {% endif %}
-                    </p>
-                    <p class="m-0 font-italic">{{ owner.bio }}</p>
-                    <p class="m-0"><i class="fas fa-map-marker-alt"></i><span class="pl-1">{{ owner.address }}</span>
-                    </p>
-                </div>
-                <div class="col-md-8 text-center">
-                    <!-- Social media links -->
-                    <ul class="list-inline">
-                        <li class="list-inline-item">Social: </li>
-                        {% for so_link in social.social %}
-                        <li class="list-inline-item">
-                            {% if so_link.url %}
-                            <a href="{{ so_link.url }}"><i class="{{ so_link.icon }}"></i>{{ so_link.label }}</a>
-                            {% else %}
-                            <strong>{{ so_link.label }}</strong>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    <!-- website feed links -->
-                    <ul class="list-inline">
-                        <li class="list-inline-item">Feed: </li>
-                        {% for fd_link in feed.feed %}
-                        <li class="list-inline-item">
-                            <a href="{{ fd_link.url | relative_url }}"><i class="{{ fd_link.icon }}"></i>{{ fd_link.label }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+<!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    {{ site.title }}</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>{{ site.footer_description }}</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{{ site.github }}">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.twitter }}">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.portfolio }}">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ site.email }}">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="page-footer-copyright">
-        <div class="container text-center">
-            <!-- copyright info -->
-            <p>Copyright &copy; {{ owner.owner }}, {{ "now" | date: "%Y" }}. Website theme <a href="https://github.com/manid2/lone-wolf-theme/">LWT</a> for <a href="https://jekyllrb.com/">Jekyll.</a>
-            </p>
-        </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="{{ site.repository }}/blob/master/LICENSE">MIT</a>
+        {{ site.time | date: '%Y' }}.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="{{ site.repository }}">
+            View Source Code
+        </a>
+
     </div>
 </footer>
