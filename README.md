@@ -1,186 +1,200 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/brennanbrown/purelog">
-    <img src="/assets/profile.png" alt="Logo" width="120" height="120">
+<div align="center">
+  <br>
+
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
+    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
   </a>
 
-  <h3 align="center">Purelog Theme for Jekyll</h3>
+  <h1>JEKYLL YAT THEME</h1>
 
-  <p align="center">
-    A responsive, well-designed template to help you get started on your next blog or website.
-    <br />
-    <a href="https://github.com/brennanbrown/purelog"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <strong><a href="https://purelog.netlify.app">View Demo</a></strong>
-    ·
-    <a href="https://github.com/brennanbrown/purelog/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/brennanbrown/purelog/issues">Request Feature</a>
-  </p>
-</p>
+</div>
 
-<!-- BADGES -->
+<h4 align="center">
+  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
+</h4>
+
 <p align="center">
-<a href="https://app.netlify.com/sites/purelog/deploys"><img src="https://api.netlify.com/api/v1/badges/062e333f-9e9d-440d-9b40-16d11959793d/deploy-status" alt="Netlify Status"></a>
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog">
-<a href="https://github.com/brennanbrown/purelog/search?l=html"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennanbrown/purelog"></a>
-<a href="https://github.com/brennanbrown/purelog/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brennanbrown/purelog"></a>
-<a href="https://github.com/brennanbrown/purelog/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brennanbrown/purelog"></a>
-<a href="https://github.com/brennanbrown/purelog/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brennanbrown/purelog"></a>
-<a href="https://purelog.netlify.app"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=Offline%21&label=Status&up_color=darkgreen&up_message=Online%21&url=https%3A%2F%2Fpurelog.netlify.app"></a>
-<br />
-<a href="https://github.com/brennanbrown?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/brennanbrown?label=Follow%20Me%21&style=social"></a>
-<a href="https://github.com/brennanbrown/purelog/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/brennanbrown/purelog?label=Watch%21&style=social"></a>
-<a href="https://github.com/brennanbrown/purelog/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brennanbrown/purelog?label=Star%21&style=social"> </a>
-<a href="https://github.com/brennanbrown/purelog/network/members"><img alt="GitHub forks"src="https://img.shields.io/github/forks/brennanbrown/purelog?label=Fork%21&style=social"></a>
+  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
+    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
+      alt="Github Pages" />
+  </a>
+
+  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
+    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
+      alt="Gem Version" />
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
+      alt="License: MIT" />
+  </a>
+
+  <a href="https://liberapay.com/jeffreytse">
+    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
+      alt="Donate (Liberapay)" />
+  </a>
+
+  <a href="https://patreon.com/jeffreytse">
+    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
+      alt="Donate (Patreon)" />
+  </a>
+
+  <a href="https://ko-fi.com/jeffreytse">
+  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
+  alt="Donate (Ko-fi)" />
+  </a>
 </p>
 
-<!-- ABOUT THE PROJECT -->
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://jeffreytse.net">jeffreytse</a> and
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
+  </sub>
+</div>
 
-## About The Project
+<br>
 
-**Purelog** is a responsive, sidebar theme for the popular JAMstack generator Jekyll that only uses the minimal [**Pure.css** framework](https://github.com/pure-css/pure) (hence the name!), while still following the best practices possible for accessibility and search-engine optimization.
+Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
+_YAT (Yet Another Theme)_ is a modern responsive theme. It's quiet
+clear, clean and neat for writers and posts. **If you are an elegant
+writer and focus on content, don't miss it.**
 
-I created this after finishing [Watery](https://github.com/brennanbrown/watery) (which this theme is built off of), as a way to add more functionality and design while still remaining as lightweight as possible.
+<p align="center">
+Like this elegant theme? You can give it a star or sponsor me!<br>
+I will respect your crucial support and say THANK YOU!
+</p>
 
-This project is aimed towards those looking for an interesting theme for Jekyll that has features that aren't found commonly elsewhere, specifically having separate sections dedicated towards: blogging, note-taking, and daily journal entries.
+<p align="center">
 
-![Purelog Screen Shot](https://i.postimg.cc/NfxJvZgx/purelog2.png)
+  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
 
-### Features
+</p>
 
-Here are a few interesting features of this Jekyll theme:
+<h4 align="center">BANNER</h4>
 
-- A fully customizable and empty `_BLANK_config.yml` to make getting up-and-running easy.
-- A speedy, on-site search function using [Simply Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search).
-- Custom collections for different types of material (note-taking, journal writing, etc.)
-- An auto-generating archive page that displays all entries from _all_ collections.
-- Auto-generating tags and categories pages.
-- Having a `_pages` collection for easier organization.
-- An author bio at the end of each post. (Located in `_inclues/author.html`)
-- Full Rouge support for syntax highlighting. (Currently using `base16.solarized.light`)
-- Auto-generated RSS feed, sitemap, accessibility features, and search-engine optimization.
+<p align="center">
+
+  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
+
+</p>
+
+## Features
+
+- Support beautiful **Night Mode**.
+- Modern responsive web design.
+- Full layouts `home`, `post`, `tags`, `archive` and `about`.
+- Uses font awesome 5 for icons.
+- Beautiful page banner with image and video.
+- Beautiful Syntax Highlight using [highlight.js][highlight-js].
+- RSS support using [Jekyll Feed][jekyll-feed] gem.
+- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
+- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
+- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Google Translation support.
+- New post tag support.
+
+Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
 ## Installation
 
-### Prerequisites
+There are three ways to install:
 
-Jekyll requires the following:
+- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
+- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
+- Forking/directly copying all of the theme files into your project.
 
-- Ruby version **2.5.0** or higher
-- RubyGems
-- GCC and Make
+### Gem-based Theme Method
 
-See [Requirements](https://jekyllrb.com/docs/installation/#requirements) for guides and details.
+Add this line to your Jekyll site's `Gemfile`:
 
-### Instructions
-
-1. Install all [prerequisites](https://jekyllrb.com/docs/installation/).
-2. Install the jekyll and bundler [gems](https://jekyllrb.com/docs/ruby-101/#gems).
-
-```
-gem install jekyll bundler
+```ruby
+gem "jekyll-theme-yat"
 ```
 
-3. Clone this repository.
+And add this line to your Jekyll site's `_config.yml`:
 
-```
-git clone https://github.com/brennanbrown/purelog.git
-```
-
-4. Change into your new directory.
-
-```
-cd purelog
+```yaml
+theme: jekyll-theme-yat
 ```
 
-5. Install gems from the `Gemfile`.
+And then execute:
 
-```
-bundle install
-```
-
-6. Build the site and make it available on a local server.
-
-```
-bundle exec jekyll serve
+```bash
+$ bundle
 ```
 
-7. Browse to [http://localhost:4000](http://localhost:4000)
+Or install it yourself as:
 
-If you encounter any errors during this process, check that you have installed all the prerequisites in [Requirements](https://jekyllrb.com/docs/installation/#requirements).
+```bash
+$ gem install jekyll-theme-yat
+```
 
-If you still have issues, see [Troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems).
+### Remote Theme Method with GitHub Pages
 
-## Getting Started
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
 
-Once you have Jekyll up-and-running, there are only a few steps needed to make this theme your own:
+To install:
 
-1. Fill out the `_BLANK_config.yml` configuration file and replace the current `_config.yml`
-2. Remove the `example_posts` folder in `_posts`, `_notes`, `_journals` and start writing your own!
-3. Modify or remove the pages in `_pages` to however you see fit.
-4. _(Optional)_ Modify or remove this `README.md` with information about your own project or blog.
-5. _(Optional)_ Modify the CSS files in the `assets` folder to customize the site.
+Add this line to your Jekyll site's `Gemfile`:
 
-<!-- ROADMAP -->
+```ruby
+gem "github-pages", group: :jekyll_plugins
+```
 
-## Roadmap
+And add this line to your Jekyll site's `_config.yml`:
 
-There are several features that I'm still planning to create and integrate, including:
+```yaml
+# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
+remote_theme: "jeffreytse/jekyll-theme-yat"
+```
 
-- Create a [Theme Gem](https://jekyllrb.com/docs/themes/#publishing-your-theme)
-- Add easy and automatic buttons to ["Deploy to Netlify"](https://docs.netlify.com/site-deploys/create-deploys/#deploy-to-netlify-button), Heroku, etc.
-- Add Travis continious integration checks
-- Add additional documentation for creating custom collections and auto generated pages
-- Add more example posts and articles
+And then execute:
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+```bash
+$ bundle
+```
 
-<!-- CONTRIBUTING -->
+### GitHub Pages without limitation
+
+GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
+
+To use the third-party gem in GitHub Pages without limitation:
+
+Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
+
+## Usage
+
+Add or update your available layouts, includes, sass and/or assets.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
+You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
 
 ## License
 
-Distributed under the MIT License. You can use this project however you see fit without needing to give attribution.
+This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
 
-See `LICENSE` for more information.
+<!-- External links -->
 
-## Resources
-
-While creating this theme, I came across a lot of helpful and hard-to-find resources. If you'd like to dive deeper into Jekyll, check them out:
-
-- Jumping Into Jekyll: <https://dev.to/brennan/jumping-into-jekyll-4o9h>
-- Jekyll Cheatsheet: <https://devhints.io/jekyll>
-- Course on Jekyll: <https://learn-the-web.algonquindesign.ca/topics/jekyll/>
-- Jekyll for Designers: <http://simpleprimate.com/jekyll-for-designers/index.html>
-- Dynamic Copyright on Jekyll: <https://michaelsoolee.com/jekyll-copyright/>
-- Creating breadcrumbs in Jekyll: <https://jekyllcodex.org/without-plugin/breadcrumbs/>
-- Display all items from ALL collections: <https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll>
-
-### Other Resources
-
-- For markdown previews: <https://jaspervdj.be/lorem-markdownum/>
-- Case Study on webfont performance: <https://www.keycdn.com/blog/web-font-performance>
-- An extensive `.gitignore`: <https://miguelmota.com/bytes/extensive-gitignore/>
-
-## Credit
-
-[**Pure.css**](https://purecss.io/) was created by the [Pure CSS](https://github.com/pure-css) group.
-
-[**Simple Jekyll Search**](https://github.com/christian-fei/Simple-Jekyll-Search) was created by [Christian Fei](https://github.com/christian-fei).
-
-Various notes and ideas were taken from [**Simply Jekyll**](https://github.com/raghuveerdotnet/simply-jekyll) by [Raghuveer S.](https://github.com/raghuveerdotnet).
+[jekyll]: https://jekyllrb.com/
+[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
+[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
+[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
+[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
+[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
+[jekyll-feed]: https://github.com/jekyll/jekyll-feed
+[highlight-js]: https://github.com/highlightjs/highlight.js
