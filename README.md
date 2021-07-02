@@ -1,173 +1,174 @@
-<div align="center">
-  <br>
+# Hydure <!-- omit in toc -->
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+Hydure is a concise two-column blog theme for Jekyll. It is built on the [Pure.css](https://github.com/pure-css/pure) framework.
 
-  <h1>JEKYLL YAT THEME</h1>
+Check out the [demo](https://zivong.blog/jekyll-theme-hydure/).
 
-</div>
+|       | Mobile | Desktop |
+| ----- | ------ | ------- |
+| Light | ![Screenshot mobile light](screenshot-mobile-light.png) | ![Screenshot desktop light](screenshot-desktop-light.png) |
+| Dark  | ![Screenshot mobile dark](screenshot-mobile-dark.png) | ![Screenshot desktop dark](screenshot-desktop-dark.png) |
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+## Highlight Features <!-- omit in toc -->
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
+- [Open Color](https://github.com/yeun/open-color)
+- Dark mode, via [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- [Font Awesome](https://fontawesome.com/)
+- [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed/)
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+- [MathJax](https://www.mathjax.org/)
+- [Disqus](https://disqus.com/)
+- [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- Archive implemented by pure [Liquid](https://shopify.github.io/liquid/)
 
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
+## Table of Contents <!-- omit in toc -->
 
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
-
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
-<br>
-
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quiet
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
-
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Global Configuration](#global-configuration)
+  - [Post Configuration](#post-configuration)
+  - [Homepage](#homepage)
+  - [Custom Head](#custom-head)
+  - [Navigation](#navigation)
+  - [Social Links](#social-links)
+  - [Alert Messages](#alert-messages)
+  - [Archive](#archive)
+- [Contributing](#contributing)
+- [Development](#development)
+- [License](#license)
 
 ## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-theme-yat"
+gem "jekyll-theme-hydure"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-yat
+theme: jekyll-theme-hydure
 ```
 
 And then execute:
 
-```bash
-$ bundle
+```shell
+bundle
 ```
 
 Or install it yourself as:
 
-```bash
-$ gem install jekyll-theme-yat
+```shell
+gem install jekyll-theme-hydure
 ```
 
-### Remote Theme Method with GitHub Pages
+If your website is hosted on GitHub Pages, you can install this theme via [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme).
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
-
-To install:
-
-Add this line to your Jekyll site's `Gemfile`:
+Add the following to your `Gemfile`:
 
 ```ruby
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
+```yml
+plugins:
+  - jekyll-remote-theme
 ```
 
-And then execute:
+Add the following to your site's `_config.yml`:
 
-```bash
-$ bundle
+```yml
+remote_theme: zivong/jekyll-theme-hydure
 ```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
 
 ## Usage
 
-Add or update your available layouts, includes, sass and/or assets.
+### Global Configuration
+
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `lang` | String | `en` | The language of pages; The value can be overwritten by the `lang` variable on each page. |
+| `title` | String | --- | The title of the website |
+| `tagline` | String | --- | The tagline of the website |
+| `cover` | String | --- | The URL of the sidebar cover image; The value can be overwritten by the `cover` variable on each page. |
+| `author.name` | String | --- | The name of the website author |
+| `author.url` | String | --- | A URL of the website author |
+| `disqus` | String | --- | Disqus short name |
+| `google_analytics` | String | --- | Google Analytics 4 Measurement ID |
+| `tags_path` | String | --- | A path to the archive-by-tags page; It is used by tags on each post |
+| `categories_path` | String | --- | A path to the archive-by-categories page; It is used by categories on each post |
+
+### Post Configuration
+
+| Variable | Type | Default | Specification |
+| -------- | ---- | ------- | ------------- |
+| `description` | String | --- | A description of the current post |
+| `last_modified_at` | String | --- | The date of the last modification you made on a post after its publishing |
+| `author` | String or Array | --- | The author name(s) of the post |
+| `math` | Boolean | `false` | Does enable MathJax on this page |
+| `comments` | Boolean | `true` | Does enable the Disqus comment system |
+
+### Homepage
+
+You can create a homepage for your site by setting `layout: home` in your `index.html`.
+
+### Custom Head
+
+Hydure leaves a placeholder to allow defining custom head. All you need to do is putting data into `_includes/custom-head.html`, and they would be automatically included in `<head>`.
+
+### Navigation
+
+The navigation menu of Hydure is configurable. You just need to specify titles and URLs in the file `_data/navigation.yml`, for example,
+
+```yml
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Archive
+  url: /archive/
+```
+
+### Social Links
+
+Hydure allows you to show social links on your website. All you need to do is creating a file `_data/social.yml`, for example,
+
+```yml
+- title: Email
+  url: mailto:zivong@protonmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/zivong91
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/zivong
+  icon: fab fa-github
+```
+
+### Alert Messages
+
+Hydure provides a predefined class `message` to specify **alert messages**. You may add it to single elements like a `<p>`, or to a parent if there are multiple elements to show.
+
+### Archive
+
+Hydure provides some built-in archive pages. It is implemented in pure Liquid. If you want to archive posts by years, you can create a page and put these code in it:
+
+```yml
+---
+layout: archive
+type: years
+---
+```
+
+Similarly, if you want to archive posts by categories or tags, you can set the `type` property as `categories` or `tags`.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/zivong/jekyll-theme-hydure. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -175,26 +176,9 @@ To set up your environment to develop this theme, run `bundle install`.
 
 Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-hydure.gemspec` accordingly.
 
 ## License
 
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
