@@ -1,23 +1,25 @@
+---
+#layout: compress # enable only if needed
+---
+
 <!DOCTYPE html>
-<html lang="en">
-    {% include head.html %}
-    <body>
-        <a class="skip-main" href="#content">Skip to main content</a>
-        <!-- MAIN CONTENT -->
-        <main class="flex-shrink-0" role="main">
-            <div class="row justify-content-center pb-3">
-                <div class="col-md-7 col-sm-12">
-                    {% include header.html %}
-                    {% include feed.html %}
-                    <div id="content">{{content}}</div>
-                </div>
-            </div>
-                <button class="scroll-to-top" id="scroll-to-top">
-                    UP <i class="fa fa-chevron-up"></i>
-                </button>
-            </div>
-        </main>
-        {% include footer.html %}
-        {% include scripts.html %}
-    </body>
+<html lang="{{ site.lang | slice: 0,2 | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+  <!-- page container -->
+  <div class="page-container">
+    <!-- page header -->
+    {% include header.html %}
+    <!-- page content -->
+    <main class="page-content" role="main">
+      {{ content }}
+    </main>
+    <!-- page footer -->
+    {% include footer.html %}
+  </div>
+  {% include scripts.html %}
+</body>
+
 </html>

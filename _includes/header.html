@@ -1,103 +1,31 @@
-<!-- HEADER -->
-<header class="mb-4">
-    <div class="dashboard disable-select">
-        <div class="mb-2 text-center">
-            <h1 class="p-2 mt-2" id="site-header">
-                <a href="/">{{site.title}}</a>
-                <br class="d-md-none d-block">
-                <small>
-                    {{ site.tagline }}
-                </small>
-            </h1>
-        </div>
-        <div class="userboard profile-board-col">
-            <div class="username">
-                <span>
-                    <a " href="/about">{{site.name}}</a>
-                </span>
-            </div>
-            <div class=" userdesc">
-                <p>{{site.description}}</p>
-            </div>
-            <div class="link-to-notes text-right">
-                <i class="fas fa-link"></i>
-                <a href="/notes">{{site.notes_url}}/notes</a>
-            </div>
-        </div>
+<header class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <nav class="container">
+    <!-- site home -->
+    <a class="navbar-brand" href="{{ '/' | absolute_url }}">
+      <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo" height="32" width="32">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <!-- TODO add theme version dropdown here -->
+        {%- for link in site.data.nav.header -%}
+          {%- if link.url contains '://' -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}"
+            {% endif %}>{{ link.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      {% if site.search == true %}
+        {%- include search-providers/search_form.html -%}
+      {% endif %}
     </div>
-    <div class="main-site-subheader menu disable-select text-center">
-        <div class="about">
-            <a " href="/about">
-                <i class=" fas fa-signature"></i>
-                About
-            </a>
-        </div>
-        <div class="hashtags">
-            <a " href="/tags">
-                <i class=" fas fa-hashtag"></i>
-                Tags
-            </a>
-        </div>
-        <div class="categories">
-            <a " href="/categories">
-                <i class=" far fa-folder-open"></i>
-                Categories
-            </a>
-        </div>
-        <div class="archive">
-            <a " href="/archive">
-                <i class=" fas fa-archive"></i>
-                Archive
-            </a>
-        </div>
-        <div class="rss">
-            <a " href="/feed.xml">
-                <i class=" fas fa-rss"></i>
-                RSS
-            </a>
-        </div>
-        <div class="donate">
-            <a href="{{ site.donate_link }}" ">
-                <i class=" fas fa-dollar-sign"></i>
-                Donate
-            </a>
-        </div>
-    </div>
-    <div class="searchbar search-container sans">
-        <i aria-hidden="true" class="fa fa-search"></i>
-        <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search Enjoyment Work..." type="text"/>
-        <label for="search-input"></label>
-        <ul id="results-container"></ul>
-    </div>
-    <script src="/assets/js/simple-jekyll-search.min.js"></script>
-    <script>
-        function changeResultContainerDisp(val) {
-            if (val) {
-                document.getElementById("results-container").style.display = "block";
-                document.getElementById("search-input").addEventListener('blur', function () {
-                    document.addEventListener('click', function (event) {
-                        var isClickInside = document.getElementById("results-container").contains(event
-                            .target);
-                        if (!isClickInside) {
-                            document.getElementById("results-container").style.display = "none";
-                        }
-                    })
-                })
-            } else {
-                document.getElementById("results-container").style.display = "none";
-            }
-        }
-        var sjs = SimpleJekyllSearch({
-            searchInput: document.getElementById('search-input'),
-            resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
-            searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="{{ site.url }}{url}" color: #555555;"><p><strong>></strong> {title}</p></a></li>',
-            noResultsText: 'No results found. Try another search.',
-            fuzzy: false,
-            limit: 5
-        })
-    </script>
-    {%- if page.permalink != "/" -%}
-        {% include breadcrumbs.html %}
-    {%- endif -%}
+  </nav>
 </header>
